@@ -5,28 +5,36 @@
         <div class="col-md-12">
           <div class="card-body">
             <img src="assets/images/logo-dark.png" alt="" class="img-fluid mb-4">
-            <h4 class="mb-3 f-w-400">Signin</h4>
+            <h4 class="mb-3 f-w-400">Bem vindo, entrar com</h4>
+            <div class="row">
+              <div class="col">
+                <button class="btn btn-outline-primary btn-block mb-4"> Facebook</button>
+              </div>
+              <div class="col">
+                <button class="btn btn-outline-primary btn-block mb-4"> Google</button>
+              </div>
+            </div>
             <div class="input-group mb-3">
               <div class="input-group-prepend">
                 <span class="input-group-text"><i class="feather icon-mail"></i></span>
               </div>
-              <input type="email" class="form-control" placeholder="Email address">
+              <input type="email" class="form-control" placeholder="Email">
             </div>
             <div class="input-group mb-4">
               <div class="input-group-prepend">
                 <span class="input-group-text"><i class="feather icon-lock"></i></span>
               </div>
-              <input type="password" class="form-control" placeholder="Password">
+              <input type="password" class="form-control" placeholder="Senha">
             </div>
             <div class="form-group text-left mt-2">
               <div class="checkbox checkbox-primary d-inline">
                 <input type="checkbox" name="checkbox-fill-1" id="checkbox-fill-a1" checked="">
-                <label for="checkbox-fill-a1" class="cr"> Save credentials</label>
+                <label for="checkbox-fill-a1" class="cr"> Salvar senha</label>
               </div>
             </div>
-            <button class="btn btn-block btn-primary mb-4">Signin</button>
-            <p class="mb-2 text-muted">Forgot password? <a [routerLink]="['/auth/reset-password']" class="f-w-400">Reset</a></p>
-            <p class="mb-0 text-muted">Don’t have an account? <a [routerLink]="['/auth/signup']" class="f-w-400">Signup</a></p>
+            <button class="btn btn-block btn-primary mb-4" [routerLink]="['/dashboard/analytics']">Entrar</button>
+            <p class="mb-2 text-muted">Esqueceu a senha? <a [routerLink]="['/auth/reset-password']" class="f-w-400"> Mudar</a></p>
+            <p class="mb-0 text-muted">Não tem uma conta? <a [routerLink]="['/auth/signup']" class="f-w-400">Criar conta</a></p>
           </div>
         </div>
       </div>
